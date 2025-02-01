@@ -6,6 +6,64 @@
     <title>My Blog</title>
     <style>
         /* Reset default styles */
+        .post-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin: 30px 0 15px 0;
+            font-weight: bold;
+        }
+        
+        .subsection-title {
+            font-size: 1.3em;
+            color: #34495e;
+            margin: 25px 0 15px 0;
+            font-weight: bold;
+        }
+        
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        
+        .post-content ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .post-content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .post-subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .post-content p {
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .post-content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .post-content a:hover {
+            text-decoration: underline;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -50,10 +108,11 @@
         }
 
         .blog-post {
-            margin-bottom: 40px;
-            padding: 20px;
+            margin-bottom: 60px;
+            padding: 30px;
             background-color: white;
-            border-radius: 5px;
+            border-radius: 8px;
+            border: 2px solid #3498db;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
@@ -97,7 +156,7 @@
 </head>
 <body>
     <header>
-        <h1>My Blog</h1>
+        <h1>Tyler Crown's Blog</h1>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -107,26 +166,328 @@
 
     <main>
         <article class="blog-post">
-            <h2 class="post-title">Welcome to My Blog</h2>
-            <div class="post-meta">Posted on February 1, 2025</div>
+            <h2 class="post-title">Why we're leading Portrait Analytics' $7m Seed round</h2>
+            <div class="post-meta">
+                <span>3 min read</span>
+                <span>Jul 20, 2023</span>
+            </div>
             <div class="post-content">
-                <p>Welcome to my blog! This is my first post. I'm excited to share my thoughts and experiences with you.</p>
-                <p>Feel free to explore the site and check back regularly for new content!</p>
+                <p>Information overload is endemic to the financial industry, particularly for buy-side equity analysts across hedge funds, private equity, corporate development, and more. It can be daunting to conduct comprehensive research quickly and formulate differentiated hypotheses on a new company or industry. There are more than 1 million finance professionals globally who spend countless hours researching and formulating perspectives in order to optimize returns and find any advantage in a competitive market.</p>
+
+                <p>To overcome this painful and time-consuming process, we sought a team that understands the workflows of financial analysts and possesses a strong technical resume in AI and LLMs. When seeking a category leader in this space, we look for founding teams that have unique product insights based on first-hand experience and strong technical backgrounds that can move quickly in an evolving space to secure distribution and market share. We found all of the above and more in Portrait Analytics and are thrilled to announce that Unusual Ventures is leading their $7m seed round.</p>
+
+                <p>Portrait Co-founder and CEO David Plon thoroughly understands the workflows of a hedge fund analyst, having worked as a buy-side analyst for a decade at some of the top hedge funds in the world including Baupost and Slate Path Capital. Portrait's engineering talent is equally as skilled, with Co-founder Connell Gough working as a full-stack software engineer at EquipmentShare and other senior AI/ML talent joining from Bloomberg, Amazon Alexa, and Twitter.</p>
+
+                <h3 class="section-title">The Portrait Analytics team</h3>
+                <p>Portrait's AI-powered research platform will 10x the speed at which investment analysts and intelligence professionals across professions will discover and become experts on companies. Portrait leverages state-of-the-art AI models to accelerate the speed of research by answering challenging questions and producing impactful insights for its users. Portrait is not just a simple LLM that sits on top of SEC filings and can do a quick search for information. Rather, Portrait is powered by a system of models that have been engineered to effectively think, write, and analyze like a well-trained analyst on an investment team.</p>
+
+                <h3 class="section-title">Market overview on Generative AI for financial research</h3>
+                <p>Active investment managers and groups spend more than $30bn per year for data and research services and will spend almost anything to get any type of investment advantage. Financial research is a multibillion-dollar industry that spans across many sectors, including hedge funds, asset management, private equity, corporate development, and broader company research. Although there have been billion-dollar companies built in this space that target the research industry, there are still numerous inefficiencies that exist in this space that have yet to be addressed. After speaking with a variety of individuals across the investment spectrum, many of the common workflow pain points include the slow aggregation of information, inaccuracies in data synthesis, the challenges that occur with presenting complex information, and the inefficiencies of comparing datasets across companies.</p>
+
+                <p>Given the rise of ChatGPT4 and the size of the financial research sector, there has been significant activity in the investment research category as a whole. Bloomberg released its BloombergGPT paper in March 2023 and Alphasense just closed a fresh round of funding at a $2.4bn valuation. We believe this only adds momentum to the space and there are strong opportunities for new entrants to build market share with differentiated products around useability, depth, and flexibility. With Portrait Analytics, investment analysts can go beyond simple synthesization solutions to identify new investment trends/ideas and improve their workflows without the loss of accuracy or credibility.</p>
+
+                <h3 class="section-title">About the Portrait Analytics leadership team</h3>
+                <p>Portrait Analytics' mission is to accelerate and deepen powerful investment research through building a generative AI research assistant for every investor. The company was co-founded by a chronically time-strapped buy-side investor at The Baupost Group who sought a better way to efficiently consume data from filings, transcripts, and research. With this goal in mind, Portrait leverages state-of-the-art machine learning applications to accelerate and deepen powerful investment research. Portrait Analytics is backed by Unusual Ventures, .406 Ventures, and partners at leading global hedge funds. To learn more, please visit <a href="http://portrait-analytics.com" target="_blank">portrait-analytics.com</a>.</p>
             </div>
         </article>
 
         <article class="blog-post">
-            <h2 class="post-title">My Second Post</h2>
-            <div class="post-meta">Posted on February 1, 2025</div>
+            <h2 class="post-title">The race for identity verification and onboarding is on! How will Generative AI make an impact?</h2>
+            <div class="post-meta">
+                <span>7 min read</span>
+                <span>Jun 16, 2023</span>
+            </div>
             <div class="post-content">
-                <p>Here's another blog post to show how multiple posts will look on your site.</p>
-                <p>You can easily add more posts by copying and pasting the article element and modifying the content.</p>
+                <p>Whether you're launching financial products in new markets or onboarding new customers, the need to conduct the necessary compliance and regulatory checks such as Anti-Money Laundering (AML), Know-Your-Customer (KYC), and Know-Your-Business (KYB) is more important than ever.</p>
+
+                <p>After onboarding, effectively managing risk becomes paramount for companies in this industry. By implementing essential tools like transaction monitoring, fraud detection, and open banking applications, you can efficiently navigate risk across various levels and promptly respond when necessary. As increased focus on regulatory scrutiny and difficult macroeconomic conditions cause businesses to fail and consumers to default, compliance and identity verification will become even more important as these entities will want to ensure they're entering into agreements and signing partnerships with solvent users.</p>
+
+                <p>Identity verification and compliance are seeing increasing interest from fintech investors and highlighted by many top-tier venture funds as a thematic focus area for 2023, including Unusual Ventures in our 2023 fintech trends post. For good reason, too! Financial institutions and other entities want a 360-degree perspective of their customers that provides a comprehensive view of their profile as they evaluate risk.</p>
+
+                <p>Identity verification includes authentication and access, biometric authentication, authorization, and identification and onboarding. For the purposes of this blog post, we'll focus on identity verification and onboarding to identify the customers and/or businesses you're interacting with. Many of the modern solutions below leverage automation and machine learning to provide instant verifications without humans in the loop.</p>
+
+                <h3 class="section-title">Mapping the identity verification sector and sizing the market</h3>
+                <p>Billions of dollars have poured into the sector and the global identity market is projected to grow massively. In Europe, the compliance and risk management software market is expected to be worth $70bn by 2027, driven by factors such as increasing regulatory pressure, rising financial crimes, and the need for more sophisticated identity verification and monitoring solutions.</p>
+
+                <p>While identity verification is a massive market, in reality, it's also a market where companies offer competing products that are largely seen as a commodity. You as an entity pay some amount to verify that the entity or individual you're interacting or doing business with is legitimate. Aside from proprietary datasets and unique underwriting models, it will largely be a race to the bottom as these entities will seek to win on price of verification, speed of verification (which is often instantaneous), and/or better verification (better data on more enhanced views of underwriting and risk).</p>
+
+                <h3 class="section-title">Biggest pain points in the identification industry and who will win</h3>
+                <p>The identity verification space faces several significant pain points that pose challenges for users. There continues to be growing sophistication of identity fraud, with cybercriminals using advanced techniques that can outwit traditional verification methods. There are also many complexities and inefficiencies in the process as there is a lack of universal and a standardized approach to identify verification across industries and jurisdictions. This often leads to manual review and human intervention in certain cases, which slows down the verification process further.</p>
+
+                <p>Identity verification across borders presents even more challenges that make the market more complicated. Varying regulatory frameworks and data protection laws across countries complicate the verification process, as businesses must navigate complex compliance requirements to ensure legal compliance. There are also differences in identity document formats, naming conventions, and cultural practices that lead to more complexity. Verifying identities across borders often requires collaboration between multiple entities, such as governments, financial institutions, and technology providers, which can lead to coordination challenges and delays. In the E.U., there is GDPR, which aims to protect the privacy and personal data of E.U. citizens, but also adds another layer of complexity for identity verification.</p>
+
+                <p>Organizations must ensure compliance with GDPR's data protection requirements when handling and processing personal data for identity verification purposes. However, there is no centralized identity database or unified digital identity framework across E.U. member states, meaning each country has its own procedures, document requirements, and authentication methods, leading to inconsistencies and delays. There have certainly been some efforts, including the launch of the European Electronic Identity and Trust Services (eIDAS) Regulation, to facilitate cross-border electronic identification. While it lays the foundation for standardized cross-border identity verification, there are still ongoing efforts to create full harmonization across the sector.</p>
+
+                <p>We've also found that many of these identity verification solutions are very strong in one market (typically where they start), but then are playing catch-up compared to other providers as they seek to enter new markets. A great example is Alloy, which has gained significant adoption in the U.S. with over 300 companies and has announced their plans to expand globally. Alloy uses more than 150 data sources to automate identity decisions during account origination and then continues to monitor those accounts on a recurring basis. While the U.S. has one set of rules and standards, it's much more fragmented in Europe, where different countries have different sets of regulations and data sources stored in different places.</p>
+
+                <h3 class="section-title">What is the future of identity verification and LLMs?</h3>
+                <p>Given the rise of Large Language Models (LLMs), it's only a matter of time before they could significantly disrupt the field of identity verification. LLMs could be used to analyze and interpret various forms of identity-related data including documents, images, and biometric information to detect potential fraud or discrepancies. Many fintech startups in the application layer have initially focused on automating the compliance and regulatory documents and processes that are required. LLMs can also much more quickly process and cross-reference large datasets that can be used to identify patterns and anomalies that may indicate fraudulent activities. This can be done through the automation of the verification process that can reduce the need for manual review and expediting the overall procedure.</p>
+
+                <p>Startups in the identity verification space are already starting to package AI signals into their identity verification products. Soups Ranjan, CEO of Sardine, mentioned how he's packaging Intrinsic AI signals (such as how you hold your phone, how you type, etc.) into their fraud and identity verification products. As more progress is made in this space, additional startups will adopt LLM solutions to strengthen their fraud and identity products.</p>
+
+                <p>As LLMs become more mainstream, there likely will be ethical considerations and responsible practices that will need to be enacted in the development of LLMs. Identity verification could be required to ensure that the researchers and developers adhere to these guidelines and ensure that the AI principles they are enacting are fair and are unbiased in the use of the technology.</p>
+
+                <p>If you are building in the identity verification or onboarding space, it'd be great to hear from you! Email me at tyler@unusual.vc.</p>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <h2 class="post-title">Unlocking commerce across borders: Why we're leading Paytrix's $18.3M Series A</h2>
+            <div class="post-meta">
+                <span>3 min read</span>
+                <span>Mar 30, 2023</span>
+            </div>
+            <div class="post-content">
+                <p>Fueled by a powerful vision for the future of global payments, all eyes are on the London-based company that Business Insider deemed a top "European fintech to watch"</p>
+
+                <p>As the world expands, the demand for conducting business across borders continues to grow, with more than a quarter of e-commerce in Europe now being cross-border. As we highlighted in "Fintech and SaaS areas primed for growth in 2023," real-time and cross-border payments remain fragmented, costly, and slow.</p>
+
+                <p>This is why Unusual Ventures is thrilled to co-lead Paytrix's $18.3M Series A investment round to drive product development and international expansion. We're honored to partner with a syndicate of premier investors, including Bain Capital Ventures and Motive Ventures, as well as Better Tomorrow Ventures, Fin Capital, Hambro Perks, Clocktower Ventures, D4 Ventures, and The Fintech Fund. I'm looking forward to joining the Paytrix board and partnering with some notable fintech leaders and angels including Mike Massaro, CEO of Flywire.</p>
+
+                <p>Cross-border commerce is still incredibly complicated and time-consuming, with multiple currencies and different regulatory requirements across each region. As the Paytrix team points out, getting cross-border commerce right is as challenging and crucial as finding product-market fit. The market opportunity is large and growing: BCG projects that cross-border payments are expected to increase from $150T in 2017 to $250T by 2027.</p>
+
+                <p>Paytrix provides a world class, all-in-one payments curation and infrastructure solution, eliminating the need for businesses to source and maintain up to 10–15 partners for cross-border payments. Paytrix enables businesses to better scale across borders, eliminating inefficiencies, costs, and complexities. By being regulated and sitting in the flow of funds, Paytrix empowers businesses to control their global payouts and settlements, eliminating FX and banking costs.</p>
+
+                <blockquote>"Businesses have no option but to stitch together an inefficient, costly, and complex patchwork of service providers — this is the pain point that Paytrix is stepping in to solve." — Aran Brown, Paytrix CEO</blockquote>
+
+                <p>Just as Carta (an Unusual portfolio company) has become critical for companies to manage their investments and cap tables, we believe Paytrix is poised to become a similar category leader for cross-border payments. Case in point: Tens of thousands of marketplaces and e-commerce merchants sell products and services across borders in multiple currencies, but most of them do not have the resources and dozens of staff to devote to cross-border payments. Instead, they must partner with a variety of providers who charge high fees and are slow to handle cross-border payments. Due to the complexity of cross-border payments, currently, only the largest players can afford to build internal solutions — Paytrix enables companies of any size to realize the same benefits efficiently.</p>
+
+                <h3 class="section-title">About the Paytrix leadership team</h3>
+                <p>We're impressed with the backgrounds of Paytrix's founders, Aran and Eddie, and their multiple decades of experience across payments, fintech, and financial services. Their experience makes them the right founders to solve this global problem and has helped them recruit a world class team around them.</p>
+
+                <p>Paytrix CEO Aran Brown previously worked in senior commercial positions at Moneycorp, Yapstone, and Hyperwallet while also contributing to the growth and sale of Skrill to Paysafe and Travelex to Western Union. Co-founder and CPO Eddie Harrison built market-leading global payment products at Western Union and Travelex. Other members of the Paytrix senior leadership team have experience from notable industry leaders such as Currencycloud, Visa, Paypal, Google, and Flywire, to name a few.</p>
+
+                <p>Paytrix is just getting warmed up and we can't wait to see what the future holds! Check out the company at <a href="http://www.paytrix.io" target="_blank">www.paytrix.io</a>.</p>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <h2 class="post-title">4 fintech and SaaS areas primed for growth in 2023 despite a tough macroeconomic environment</h2>
+            <div class="post-meta">
+                <span>4 min read</span>
+                <span>Jan 5, 2023</span>
+            </div>
+            <div class="post-content">
+                <p>Much has already been written across Twitter, LinkedIn, and Substacks on how 2023 will be the year entrepreneurs will need to focus on cost cutting over growth. Many workers at growth-stage companies will find their options underwater and will choose to leave. There will be inevitable M&A consolidation across fintech, B2C will struggle, and a recession is the best time to start a company.</p>
+
+                <p>Instead of rehashing the messages you've already heard, let's highlight four areas in fintech and SaaS that are primed for growth in 2023.</p>
+
+                <h3 class="section-title">1) Real-time and cross-border payments remain fragmented, costly and slow</h3>
+                <p>There are approximately 60 countries in the world that have real-time interbank payments systems, but the U.S. is not one of them. The U.S. saw 1.8bn real-time transactions in 2021 (expected to 4x by 2026) compared to China's 18.5bn real-time transactions.</p>
+
+                <p>With the launch of FedNow Service in mid-2023, the U.S. will take a step in the right direction around enabling instant payments. The FedNow Service will not solve all of the problems and challenges with real-time payments as ⅓ of B2B payments in the U.S. were made by checks according to a 2022 Association of Financial Professionals Digital Payments Survey.</p>
+
+                <p>On a global scale, the value of cross-border payments is projected to be over $250T by 2027 according to the Bank of England, and over a quarter of e-commerce in Europe is cross-border. When money is moved across borders, two things have to happen:</p>
+
+                <p>1) Actually moving the money</p>
+
+                <p>and</p>
+
+                <p>2) Utilizing onboarding and compliance software to move the money and adhere to the bank's KYC/KYB, AML, fraud, and CFT requirements.</p>
+
+                <p>Current payment rails and tools such as SWIFT cannot support additional regulatory or risk checks aside from basic account info. Banks are increasingly focused on this as they seek to derisk their exposure to foreign risk by exiting some of these businesses (e.g., Wells Fargo exited international wealth business to rein in risk (January 2021), global banks faced arduous process to exit Russia (March 2022), etc.). Visa and Mastercard blamed fraud for increasing their cross-border fees in the UK (August 2022).</p>
+
+                <p>There is a need for more comprehensive compliance and identity management solutions to reduce fraud as well as automated financial platforms that will increase the speed and reduce the cost to send money across borders.</p>
+
+                <h3 class="section-title">2) More automation, risk mitigation, compliance, and cash-flow management solutions will drive margin improvement for businesses</h3>
+                <p>In a recessionary environment, businesses will see stagnant or declining revenue growth. With this decline, they will seek to improve their margins by cutting costs, likely through headcount or software spend reduction.</p>
+
+                <p>Internally, businesses will have a higher requirement to purchase any type of sales-enablement software. The only spend that these businesses will likely approve of are those platforms that save them money, either by automating more of their internal processes, better managing their cash flow and working capital requirements, or helping them reduce their losses from businesses that may default on their obligations.</p>
+
+                <p>We are particularly excited about AI and analytical platforms that help businesses better understand the risk posed by SMBs and different underwriting mechanisms that can more effectively assess risk posed by consumers and businesses. In automation, we believe there are many processes that can be automated in proptech, construction tech, and back office tech for financial institutions. Lastly, more compliance tools will be enacted as there is more regulatory scrutiny and risk posed by consumers and businesses.</p>
+
+                <h3 class="section-title">3) OpenAI GPT-4 and Modern LLMs will revolutionize many aspects of fintech and broader vertical SaaS</h3>
+                <p>OpenAI GPT-4 and Modern Large Language Models (LLMs) will bring about significant improvements to certain areas of fintech and vertical SaaS. In fintech, much of the early OpenAI GPT-4 adoption will likely happen in the communication layer in both retail banking and wealth management.</p>
+
+                <p>Consumers will no longer have to meet with bankers or wealth advisors or work with simplified chatbots to get summaries on their accounts or seek broader advice. Instead, they can receive personalized communications based on their financial history, status, and goals.</p>
+
+                <p>Other instances where generative AI could impact fintech include payments where consumers could get instantaneous billing summaries on what they're purchasing. Financial institutions may also be able to provide more information to consumers when they are denied a new credit product. From a broader vertical SaaS perspective, many companies that interact with customers have large call centers and customer service needs. Generative AI could be utilized to streamline many of these interactions and make them more efficient.</p>
+
+                <h3 class="section-title">4) Regulatory tailwinds and consumer/business sentiment will drive growth at the intersection of climate and fintech</h3>
+                <p>Governments and government agencies across the globe are enacting rules to meet different climate goals. In March 2022, the SEC proposed a climate-related disclosure rule that would require all public companies in the U.S. to disclose their scope 1, 2, and 3 emissions. While the outcome of this proposed rule is still being lobbied by multiple industry groups, ~57% of Russell 1000 companies today report their scope 1 and 2 emissions.</p>
+
+                <p>In the E.U., an arrangement was reached for the world's first carbon border tax to be implemented. At the same time, consumer and business sentiment is also heavily focused on meeting climate goals. 65% of consumers recently surveyed expect businesses to do more to make progress on reducing carbon emissions, tackle air pollution, and make supply chains more sustainable.</p>
+
+                <p>While carbon accounting and carbon credit/offset management platforms are leading the way in terms of investor attention, we expect to continue to see advancements in other areas at the intersection of fintech and climate. This includes areas in risk management and analysis, sustainability/efficiency efforts across supply chains, and ESG investment tools.</p>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <h2 class="post-title">Core fintech themes and advice for founders in today's market</h2>
+            <div class="post-meta">
+                <span>8 min read</span>
+                <span>Oct 13, 2022</span>
+            </div>
+            <div class="post-content">
+                <p>Crypto trading, real-time business and peer-to-peer payments, personalized insurance, mobile digital wallets, vertically focused neo-banks — fintech's rapid pace of innovation over the last five years has made these once-unthinkable ideas commonplace.</p>
+
+                <p>At Unusual Ventures, we are committed to fintech innovation with investments in high-growth businesses such as Carta and Robinhood, among others. With our recently announced ~$500M Fund III earlier this year, we are looking to build on these investments in the fintech sector.</p>
+
+                <p>For both financial institutions and non-financial companies, the opportunities to embrace software solutions to improve productivity and enhance consumer experience are at an all-time high. Even with the recent headwinds in the macro market putting pressure on certain segments of fintech like direct-to-consumer (DTC) lending and insurance, or Buy Now Pay Later (BNPL) companies, we believe over the long run, the fintech ecosystem is among the most powerful sectors to invest in.</p>
+
+                <p>In this post, we'll provide an overview of the fintech landscape, share some of the investment areas we're excited about, and offer some advice for founders that are building fintech companies.</p>
+
+                <h3 class="section-title">Overview of the fintech landscape</h3>
+                <p>Here's an inside look at how we analyze core fintech segments including better access, data and workflow automation, and business enablers.</p>
+
+                <p>We segment fintech businesses into three categories, depending on the end customer:</p>
+                <ul>
+                    <li>B2C — Fintechs that sell to consumers and provide better access to services</li>
+                    <li>B2B — Fintechs that implement data and workflow automation for other businesses</li>
+                    <li>Infrastructure — Platforms that enable core fintech functionality</li>
+                </ul>
+
+                <h4 class="subsection-title">Better access — consumer applications</h4>
+                <p>This category includes better ways for consumers to bank, borrow, spend, and protect their assets. Some of the areas that have seen innovation include more financial access (often driven by better data on consumer risk) and the portability of account information across a consumers' financial life.</p>
+
+                <p>While the traditional area of consumer applications have seen many players enter across different fintech industry verticals, new product lines continue to emerge. This includes banking products that target teenagers and young adults (HENRYs, aka High Earner Not Rich Yet) such as Greenlight and Current, and alternative asset investment platforms like Alto.</p>
+
+                <h4 class="subsection-title">Data & workflow automation — B2B</h4>
+                <p>We typically define data and workflow automation tools as platforms that help financial and nonfinancial service institutions better transact, protect, and share their data with other business entities or improve their internal operations. This includes increased automation of internal financial services practices to streamline many of their operations and reduce manual headcount. B2B also includes more data analysis and underwriting to better assess risk when partnering with other financial entities and/or consumers. More recently, startups that provide upfront capital without dilution to SaaS startups have gained significant investor interest including Pipe and Arc along with startups that provide financial management platforms and tools for CFOs such as Carta and Dext.</p>
+
+                <h4 class="subsection-title">Business enablers — core infrastructure</h4>
+                <p>Core infrastructure includes cloud-native platforms that power the decision-making and management of users on these fintech applications. Infrastructure offerings have also evolved to include custom label solutions where startups that don't want to go through the necessary regulatory approvals to become an issuing bank, but still want to offer financial products. These "as-a-Service" solutions including credit-as-a-service and banking-as-a-service allow startups to build financial products much more quickly and embed them into their finance flow. Many financial solutions are embedded on a company's platform and can also build greater customer loyalty and increase LTV/spend. A great example is Starbucks and their massively successful loyalty application, which creates a closed-loop payments ecosystem.</p>
+
+                <h3 class="section-title">Areas of investment focus in fintech</h3>
+                <p>One of the by-products of the global pandemic has been the rapid acceleration of digital banking, payments, and investing, which led to increased investment in fintech by VCs, including record amounts of funding in 2021. As more money has flowed into the sector, more companies are going after the same customer base, leading to rising customer acquisition costs. While these increased costs and challenging macroeconomic conditions have made some areas of fintech less attractive for investment, there are other areas of fintech that remain appealing over the long term, or have even become more enticing.</p>
+
+                <p>Tools for managing cash flow become a higher priority area as businesses look to navigate uncertainty and set themselves up for success in the subsequent macro-environment. Additionally, there will be increased pressure on managing expenses and headcount effectively, spurring more adoption of software automation for core financial functions within businesses. In a new economic environment, fintech will deliver value in these core areas creating better outcomes for consumers and businesses.</p>
+
+                <p>These are four of the investment areas that we are tracking closely:</p>
+                <ul>
+                    <li>Data utilization to drive better experiences and decision-making</li>
+                    <li>Vertical SaaS with embedded financial solutions</li>
+                    <li>Digital access and automation of financial services</li>
+                    <li>Plug-and-play infrastructure (platforms driven by APIs)</li>
+                </ul>
+
+                <h4 class="subsection-title">Data utilization to drive better experiences and decision-making</h4>
+                <p>Many business practices across financial services don't put data into practice regardless of the amount they capture and analyze. Acquiring the right data at the right time — and then keeping that data flexible, portable, and secure — are key challenges.</p>
+
+                <p>By leveraging data in real time, financial services companies can better understand their customers, provide them with enhanced experiences, and make improved decisions overall. This extends beyond just underwriting — businesses can determine what products to put in front of customers, present payment options that optimize profitability and automate core requirements like compliance management.</p>
+
+                <p>This is why we're excited about orchestration layers for data in fintech. Many decision-makers are not technical and are unable to streamline their operations or make the most data-informed decisions. This includes incumbents with data sitting across different silos, startups that rely on APIs to pull data from various sources to create a summarized analytics, and crypto where it's still difficult to bridge between TradFi and DeFi. Orchestration layers will allow nontechnical users to leverage and visualize data that may sit across multiple sources to make optimal business decisions.</p>
+
+                <h4 class="subsection-title">Vertical SaaS with embedded financial solutions</h4>
+                <p>Vertical software products that solve specific pain points and accumulate core insights into a customer's operating data can be a natural on-ramp to offering embedded financial solutions. With this unique insight, SaaS companies are able to embed financial products such as payment solutions, underwriting, or insurance protection as part of their solution, providing an additional source of revenue.</p>
+
+                <p>Vertical SaaS players with embedded financial solutions have both a compelling product advantage and an attractive core software-based business model enhanced with fintech offerings. High growth businesses like Toast in the food/beverage space and AppFolio in the property management space are good examples in this category.</p>
+
+                <h4 class="subsection-title">Digital access and automation of financial solutions</h4>
+                <p>Giving users and enterprises digital access to their financial products and automating many of their functions has created immense value across the fintech value chain. This includes the rise of mobile-first neobanks like Chime and Revolut. While getting access to our financial assets has certainly gotten easier, new platforms continue to emerge, aiming to provide more business and customer segments with the financial products they need.</p>
+
+                <p>In the enterprise space, while digital access has largely penetrated much of the market today, automation still remains a challenge for many back-office functions of financial institutions. This is why we're excited about enterprise-focused platforms that provide automation for back-office operations including tools for the CFO's office. Given the number of manual processes and pain points that exist with incumbents today, we remain excited about the opportunity to back great founders in this category.</p>
+
+                <h4 class="subsection-title">Plug-and-play infrastructure (platforms driven by APIs)</h4>
+                <p>When you think of the largest fintech companies to date — Stripe, Plaid, Rapyd, etc. — what do they share in common? They all leverage APIs to transfer data between sources or integrate their own products into other interfaces. The API allows companies to more quickly offer and launch different financial products at a fraction of the cost and with short setup times.</p>
+
+                <p>These APIs have given rise to "as-a-Service" business models, where fintechs no longer have to acquire the necessary banking or regulatory licenses and can quickly offer and launch their own financial products. We believe these "as-a-Service" models will continue to evolve and develop new products for areas of the market that are still underserved.</p>
+
+                <h3 class="section-title">Advice for founders</h3>
+                <h4 class="subsection-title">Questions we ask ourselves when evaluating fintech opportunities</h4>
+                <p>At Unusual, when speaking with fintech founders, and looking at investments more broadly, here are some key questions we ask as we evaluate startups to build transformational businesses.</p>
+
+                <h4 class="subsection-title">1. Is there a market inflection point?</h4>
+                <p>While market size is obviously an important factor in evaluating a startup, we also focus on looking for a shift, change, or new development in a sector that creates the compelling "why now" moment.</p>
+
+                <p>It's important to remember that market and timing need to come together, along with an exceptional team, to create a successful business with the right early momentum. We often see strong teams with interesting ideas, but when there is no critical insight into the question of What makes this a burning problem that my target customer set needs to solve now!?, we recommend founders recalibrate.</p>
+
+                <h4 class="subsection-title">2. What is the leap?</h4>
+                <p>We look for businesses attacking segments where there are still opportunities to make big leaps within software and infrastructure. If a business idea is just moderately better than current alternatives, more often than not, the status quo will win. Business inertia — not just other well-funded startups — is a real competitor.</p>
+
+                <p>Early stage companies that can clearly identify the one area where they are demonstrably better than existing alternatives have the best chances of early customer adoption and utilization. Similarly related, when we talk to design partners, we look for early evidence of the new solution helping make that "business leap" and for signs that there is an ongoing business need that will drive sustained usage and, ultimately, customer LTV.</p>
+
+                <h4 class="subsection-title">3. Can this startup win in crowded segments?</h4>
+                <p>Fintech has experienced a rush of venture investment that's created crowded markets with lots of market noise. While you don't need to be first in the market, you must believe you can become one of the top players in a market to truly build a large business of real value.</p>
+
+                <p>When there are dozens of well-funded companies in a space, it doesn't mean you can't compete, but you must ask yourself "what makes your specific product/solution a must have now for your Ideal Customer Profile (ICP)," even with a variety of alternatives. If you can't answer this question, keep iterating.</p>
+
+                <h4 class="subsection-title">4. What is the go-to-market strategy and business model viability?</h4>
+                <p>While fintech is not always the easiest model to understand, when we hear, "it's a complex business model," this always raises a yellow flag. Successful go-to-market motions and business models have to be clear and digestible to your ICP, and your model must align you and your customer for joint success.</p>
+
+                <p>Often the most successful models align usage to increased pricing, joining the increased value an organization is receiving to increased pricing. Thoughtful minimums and tiers are critical here with definable attributes that drive prices — for example, a certain number of API calls.</p>
+
+                <p>If you're building something in the fintech space, we'd love to speak with you. You can reach us at lars@unusual.vc and tyler@unusual.vc.</p>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <h2 class="post-title">The benefits of being Unusual: Why I joined Unusual Ventures</h2>
+            <div class="post-meta">Originally published on Medium</div>
+            <div class="post-subtitle">Why empowering fintech and SaaS startups truly hits home for me</div>
+            <div class="post-content">
+                <p>I'm thrilled to announce that I've joined the team at Unusual Ventures as vice president, focusing on fintech and SaaS investments.</p>
+
+                <p>My interest in fintech began as a child after growing up in a low socioeconomic background and living paycheck to paycheck. I was convinced that the only way to break free of my situation was to better understand the financial ecosystem and find ways to improve it. My journey into financial services professionally began in 2014 as a strategic consultant for numerous banks and insurance companies. I learned a lot from working with large incumbents and realized there were many pain points in the ecosystem that needed to be disrupted. This is what drove me into venture in 2017 to focus on fintech and related verticals, meeting entrepreneurs, and observing how the broader landscape was evolving.</p>
+
+                <p>While at Stanford Business School, I doubled down on my interest in fintech and explored themes across payments, banking infrastructure, and other sectors through internships and serving as co-president of the fintech club. I remain incredibly bullish on the fintech and SaaS sectors, where we'll continue to see world-class entrepreneurs emerge. With so many options for venture capital, I wanted to be somewhere where I could offer founders true differentiation and rationale for why they should partner with Unusual to build the companies of the future.</p>
+
+                <p>I chose to join the team at Unusual because I have seen how our approach to serving early-stage entrepreneurs is unique and impactful. Unusual provides the best resources and support startups on the path to product-market fit. The team is stacked with former successful operators across multiple sectors who have endured the ups and downs of the entrepreneurial journey.</p>
+
+                <p>It's not just the impressive background of the Unusual team, but also the firm's deep commitment to supporting our founders, which stood out to me. I was blown away by the team and culture of the firm — everyone is focused on empowering our founders through their journey in building world-class businesses. Lastly, the integrity and excellence that Unusual Co-Founder John Vrionis and the team have built is paramount to how we operate as investors.</p>
+
+                <p>I am grateful to John, Lars, and the rest of the Unusual team for welcoming me and I'm excited to get started.</p>
+
+                <p>If you're an aspiring or current founder in the fintech or SaaS sectors, I look forward to meeting you and hopefully finding a way to work together.</p>
+
+                <p>Please feel free to reach me at tyler@unusual.vc, on Twitter, and LinkedIn.</p>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <h2 class="post-title">4 fintech and SaaS areas primed for growth in 2023 despite a tough macroeconomic environment</h2>
+            <div class="post-meta">
+                <span>4 min read</span>
+                <span>Jan 5, 2023</span>
+            </div>
+            <div class="post-content">
+                <p>Much has already been written across Twitter, LinkedIn, and Substacks on how 2023 will be the year entrepreneurs will need to focus on cost cutting over growth. Many workers at growth-stage companies will find their options underwater and will choose to leave. There will be inevitable M&A consolidation across fintech, B2C will struggle, and a recession is the best time to start a company.</p>
+
+                <p>Instead of rehashing the messages you've already heard, let's highlight four areas in fintech and SaaS that are primed for growth in 2023.</p>
+
+                <h3 class="section-title">1) Real-time and cross-border payments remain fragmented, costly and slow</h3>
+                <p>There are approximately 60 countries in the world that have real-time interbank payments systems, but the U.S. is not one of them. The U.S. saw 1.8bn real-time transactions in 2021 (expected to 4x by 2026) compared to China's 18.5bn real-time transactions.</p>
+
+                <p>With the launch of FedNow Service in mid-2023, the U.S. will take a step in the right direction around enabling instant payments. The FedNow Service will not solve all of the problems and challenges with real-time payments as ⅓ of B2B payments in the U.S. were made by checks according to a 2022 Association of Financial Professionals Digital Payments Survey.</p>
+
+                <p>On a global scale, the value of cross-border payments is projected to be over $250T by 2027 according to the Bank of England, and over a quarter of e-commerce in Europe is cross-border. When money is moved across borders, two things have to happen:</p>
+
+                <p>1) Actually moving the money</p>
+
+                <p>and</p>
+
+                <p>2) Utilizing onboarding and compliance software to move the money and adhere to the bank's KYC/KYB, AML, fraud, and CFT requirements.</p>
+
+                <p>Current payment rails and tools such as SWIFT cannot support additional regulatory or risk checks aside from basic account info. Banks are increasingly focused on this as they seek to derisk their exposure to foreign risk by exiting some of these businesses (e.g., Wells Fargo exited international wealth business to rein in risk (January 2021), global banks faced arduous process to exit Russia (March 2022), etc.). Visa and Mastercard blamed fraud for increasing their cross-border fees in the UK (August 2022).</p>
+
+                <p>There is a need for more comprehensive compliance and identity management solutions to reduce fraud as well as automated financial platforms that will increase the speed and reduce the cost to send money across borders.</p>
+
+                <h3 class="section-title">2) More automation, risk mitigation, compliance, and cash-flow management solutions will drive margin improvement for businesses</h3>
+                <p>In a recessionary environment, businesses will see stagnant or declining revenue growth. With this decline, they will seek to improve their margins by cutting costs, likely through headcount or software spend reduction.</p>
+
+                <p>Internally, businesses will have a higher requirement to purchase any type of sales-enablement software. The only spend that these businesses will likely approve of are those platforms that save them money, either by automating more of their internal processes, better managing their cash flow and working capital requirements, or helping them reduce their losses from businesses that may default on their obligations.</p>
+
+                <p>We are particularly excited about AI and analytical platforms that help businesses better understand the risk posed by SMBs and different underwriting mechanisms that can more effectively assess risk posed by consumers and businesses. In automation, we believe there are many processes that can be automated in proptech, construction tech, and back office tech for financial institutions. Lastly, more compliance tools will be enacted as there is more regulatory scrutiny and risk posed by consumers and businesses.</p>
+
+                <h3 class="section-title">3) OpenAI GPT-4 and Modern LLMs will revolutionize many aspects of fintech and broader vertical SaaS</h3>
+                <p>OpenAI GPT-4 and Modern Large Language Models (LLMs) will bring about significant improvements to certain areas of fintech and vertical SaaS. In fintech, much of the early OpenAI GPT-4 adoption will likely happen in the communication layer in both retail banking and wealth management.</p>
+
+                <p>Consumers will no longer have to meet with bankers or wealth advisors or work with simplified chatbots to get summaries on their accounts or seek broader advice. Instead, they can receive personalized communications based on their financial history, status, and goals.</p>
+
+                <p>Other instances where generative AI could impact fintech include payments where consumers could get instantaneous billing summaries on what they're purchasing. Financial institutions may also be able to provide more information to consumers when they are denied a new credit product. From a broader vertical SaaS perspective, many companies that interact with customers have large call centers and customer service needs. Generative AI could be utilized to streamline many of these interactions and make them more efficient.</p>
+
+                <h3 class="section-title">4) Regulatory tailwinds and consumer/business sentiment will drive growth at the intersection of climate and fintech</h3>
+                <p>Governments and government agencies across the globe are enacting rules to meet different climate goals. In March 2022, the SEC proposed a climate-related disclosure rule that would require all public companies in the U.S. to disclose their scope 1, 2, and 3 emissions. While the outcome of this proposed rule is still being lobbied by multiple industry groups, ~57% of Russell 1000 companies today report their scope 1 and 2 emissions.</p>
+
+                <p>In the E.U., an arrangement was reached for the world's first carbon border tax to be implemented. At the same time, consumer and business sentiment is also heavily focused on meeting climate goals. 65% of consumers recently surveyed expect businesses to do more to make progress on reducing carbon emissions, tackle air pollution, and make supply chains more sustainable.</p>
+
+                <p>While carbon accounting and carbon credit/offset management platforms are leading the way in terms of investor attention, we expect to continue to see advancements in other areas at the intersection of fintech and climate. This includes areas in risk management and analysis, sustainability/efficiency efforts across supply chains, and ESG investment tools.</p>
             </div>
         </article>
     </main>
 
     <footer>
-        <p>&copy; 2025 My Blog. All rights reserved.</p>
+        <p>&copy; 2025 Tyler Crown's Blog. All rights reserved.</p>
     </footer>
 </body>
 </html>
